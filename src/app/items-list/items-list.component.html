@@ -2,6 +2,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
 <div class="grid-container">
   <div class="container"  *ngFor="let item of vegItemsList">
         <img src="../../assets/biryani.jpg"/>
@@ -12,7 +13,7 @@
           <button class="increment">+</button>
         </div>
         <div class="price-order-container">
-          <p class="item-price">{{item.price}}</p>
+          <p class="item-price">{{item.price}}/-</p>
           <button>Order</button>
       </div>  
       
