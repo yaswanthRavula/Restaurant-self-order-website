@@ -1,0 +1,16 @@
+.matChipList{
+    display: inline;
+    float:right;
+    padding: 2%;
+ 
+
+}
+.mat-chip{
+    color: white;
+    margin: 1%;
+    background-color: black;
+}
+.mat-chip selected{
+    background-color: deepskyblue;
+    color:black;
+}

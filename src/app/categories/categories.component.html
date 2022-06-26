@@ -1,0 +1,7 @@
+<!--This for categories options-->
+<mat-chip-list [(value)]="chipList" [selectable]="chipListSelectable" [multiple]="false" class="matChipList" >
+    <mat-chip  *ngFor="let item of categoryList" (click)="showItems(item)"  id="{{item}}">{{item}}</mat-chip>
+  </mat-chip-list>
+
+
+ 
