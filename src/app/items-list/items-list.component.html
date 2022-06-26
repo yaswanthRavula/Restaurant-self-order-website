@@ -2,21 +2,23 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
-<mat-grid-list  cols="2" rowHeight="2:1" >
+<mat-grid-list  cols="2" rowHeight="2:4" >
   <mat-grid-tile *ngFor="let item of vegItemsList">
-    <div class="mat-grid-tilee">
-      <p class="item-name">{{item.name}}</p>
-      <div class="quantity-container">
-        <button class="decrement">-</button>
-        <p id="quantity" class="quantity">1</p>
-        <button class="increment">+</button>
-      </div>
-      <div class="price-order-container">
-          <p class="item-price">{{item.price}}</p>
-          <button>Order</button>
-      </div>     
+   <div class="container">
+    <p class="item-name">{{item.name}}</p>
+
+    <div class="quantity-container">
+      <button class="decrement">-</button>
+      <p id="quantity" class="quantity">1</p>
+      <button class="increment">+</button>
     </div>
-    <img src="../../assets/biryani.jpg" />
+
+    <div class="price-order-container">
+      <p class="item-price">{{item.price}}</p>
+      <button>Order</button>
+  </div>  
+   </div>
+   <img src="../../assets/biryani.jpg" />
   </mat-grid-tile>
   </mat-grid-list>
   

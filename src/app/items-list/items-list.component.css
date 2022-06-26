@@ -6,15 +6,54 @@
 mat-grid-tile{
     margin-left: 10px;
     margin-bottom: 10px;
+    height: fit-content;
 }
-.mat-grid-tile{
-    border-radius: 30px;
+
+
+.item-name{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 75%;
+    line-height: 180%;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10% !important;
+}
+
+
+.quantity-container{
+    display:-webkit-inline-flex;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    justify-items: center;
+    justify-content: space-between;
     
+  }
+  .quantity-container p{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 100%;
+      color: grey;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+  .quantity-container button{
+      background-color: black;
+      color: white;
+      border: none;
+      height: 3%;
+      border-radius: 10px;
+      padding-right:5px ;
+      padding-left: 5px;
+      align-items: center;
+  }
+ .container{
+    border-radius: 30px;
     display: inline;
     position: absolute;
     padding: 5%;
     padding-top: 30%;
-    top: 30%;
+     height: fit-content;
     width: 33%;
     text-align: center;
     background-color: rgba(230, 225, 225, 0.477)  ;
@@ -27,15 +66,7 @@ mat-grid-tile{
     margin-left: auto;
     margin-right: auto;
 }
-.item-name{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 75%;
-    line-height: 180%;
-    color: black;
-    font-weight: bold;
-    margin-bottom: 10% !important;
-}
+
 .mat-grid-tile .item-price{
     margin-left: auto;
     margin-right: auto;
@@ -45,32 +76,7 @@ mat-grid-tile{
     font-weight: bolder;
     
 }
-.quantity-container{
-  display:-webkit-inline-flex;
-  margin-top: 0%;
-  margin-bottom: 5%;
-  justify-items: center;
-  justify-content: space-between;
-  
-}
-.quantity-container p{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 100%;
-    color: grey;
-    margin-left: 10px;
-    margin-right: 10px;
-    
-}
-.quantity-container button{
-    background-color: black;
-    color: white;
-    border: none;
-    height: 3%;
-    border-radius: 10px;
-    padding-right:5px ;
-    padding-left: 5px;
-    align-items: center;
-}
+
 img{
     box-shadow: 5px 5px 10px 5px grey;
     height: 110px;
