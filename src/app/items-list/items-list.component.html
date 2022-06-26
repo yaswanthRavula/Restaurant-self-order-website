@@ -2,20 +2,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
-<mat-grid-list  cols="2"  >
-  <mat-grid-tile aria-colspan="2" *ngFor="let item of vegItemsList">
-    <div class="container">
-      <p class="item-name">{{item.name}}</p>
-      <div class="quantity-container">
-        <button class="decrement">-</button>
-        <p id="quantity" class="quantity">1</p>
-        <button class="increment">+</button>
-      </div>
-      <div class="price-order-container">
-        <p class="item-price">{{item.price}}</p>
-        <button>Order</button>
-    </div>  
-    </div>
-    
-  </mat-grid-tile>
-</mat-grid-list>
+<div class="grid-container">
+  <div class="container"  *ngFor="let item of vegItemsList">
+        <img src="../../assets/biryani.jpg"/>
+        <p class="item-name">{{item.name}}</p>
+        <div class="quantity-container">
+          <button class="decrement">-</button>
+          <p id="quantity" class="quantity">1</p>
+          <button class="increment">+</button>
+        </div>
+        <div class="price-order-container">
+          <p class="item-price">{{item.price}}</p>
+          <button>Order</button>
+      </div>  
+      
+  </div>
+ 
+</div>
+
