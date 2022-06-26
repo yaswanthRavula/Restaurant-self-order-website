@@ -8,7 +8,7 @@ import { Item } from '../shared/item';
 })
 export class ItemsListComponent implements OnInit {
   item1:Item={name:"Chicken Biryani",price:265,quantity:1}
-  vegItemsList:Item[]=[this.item1,this.item1,this.item1]
+  vegItemsList:Item[]=[this.item1,this.item1,this.item1,this.item1,this.item1,this.item1]
   constructor() { }
 
   ngOnInit(): void {
