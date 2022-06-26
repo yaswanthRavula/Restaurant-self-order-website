@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CategoryStorage } from '../shared/category-storage';
 
 @Component({
   selector: 'app-categories',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private categoryStorage:CategoryStorage) { }
 
   ngOnInit(): void {
   }
@@ -22,7 +23,8 @@ export class CategoriesComponent implements OnInit {
    console.log(categoryItemName)
    this.makeDeselectedAll();//a method to un select all so that all items style changes to unselected
    this.makeSelected(categoryItemName); //a method to select item so that seleted item style changes to selected
- }
+  this.categoryStorage.setcategory(categoryItemName);
+  }
 
 
  //To make all items disbled style
