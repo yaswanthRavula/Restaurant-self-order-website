@@ -1,7 +1,32 @@
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+
+<div style="display: inline-block;">
 <!--This for categories options-->
-<mat-chip-list [(value)]="chipList" [selectable]="chipListSelectable" [multiple]="false" class="matChipList" >
+<mat-chip-list  [selectable]="chipListSelectable" [multiple]="false" class="matChipList" >
     <mat-chip  *ngFor="let item of categoryList" (click)="showItems(item)"  id="{{item}}">{{item}}</mat-chip>
   </mat-chip-list>
 
 
  
+<div class="grid-container">
+  <div class="container"  *ngFor="let item of ItemsList">
+        <p class="item-name">{{item.name}}</p>
+        <div class="quantity-container">
+          <button class="decrement" (click)="decrementQuantity(item)" >-</button>
+          <p id="quantity" class="quantity" >{{item.quantity}}</p>
+          <button class="increment" (click)="incrementQuantity(item)">+</button>
+        </div>
+        <div class="price-order-container">
+          <p class="item-price">Rs. {{item.price*item.quantity}}/-</p>
+          <button (click)="onOrder(item)">Order</button>
+      </div>  
+      
+  </div>
+ 
+</div>
+
+</div>

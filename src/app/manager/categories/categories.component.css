@@ -1,0 +1,182 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(211, 214, 218);
+    padding-bottom:40px;
+    padding:30px;   
+    padding-top: 20px;
+}
+
+
+.add-div{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+.add-div button{
+    height: 30px;
+    width: 30px;
+    background-color:orange ;
+    border-radius: 20px;
+    border:none;
+    margin-right: 10px;
+    
+  
+  }
+
+
+.matChipList{
+    display: flex;
+    float:right;
+    padding: 2%;
+    width: 700px;
+    text-align: center;
+
+}
+.mat-chip{
+    color: white;
+    margin: 1%;
+    background-color: black;
+}
+.mat-chip selected{
+    background-color: deepskyblue;
+    color:black;
+}
+
+
+
+
+.heading{
+    color: lightcoral;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 300%;
+    margin-top: 4%; 
+    text-align: center;   
+}
+
+.grid-container{
+   
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+     
+}
+
+div .container:hover{
+    background-color:white;
+}
+
+.container{
+    border-radius: 10px;
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5%;
+    padding-top: 10%;
+    box-shadow: 1px 2px 2px 2px rgba(9, 9, 9, 0.267);
+    text-align: center;
+    background-color: rgba(126, 121, 190, 0.166)  ;
+    font-family: 'Ubuntu', sans-serif;
+  
+}
+
+.item-name{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 160%;
+    line-height: 180%;
+    background-image: linear-gradient(60deg, #672b02, rgb(255, 111, 0));
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    font-family:'Roboto Condensed', sans-serif;
+    margin-bottom: 10% !important;
+}
+
+
+.quantity-container{
+    display:-webkit-inline-flex;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  .quantity-container p{
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 100%;
+      color: grey;
+      margin-left: 10px;
+      margin-right: 10px;
+      
+  }
+  .quantity-container button{
+      background-color: black;
+      color: white;
+      border: none;
+      height: 3%;
+      border-radius: 5px;
+      padding-right:5px ;
+      padding-left: 5px;
+      align-items: center;
+  }
+ 
+
+
+ .item-price{
+    font-size: 120%;
+    color: grey  ;
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+   
+}
+
+img{
+    box-shadow: 5px 5px 10px 5px rgba(0, 191, 255, 0.296);
+    height: 130px;
+    width:130px;
+    position: relative;
+    border-radius: 200px;
+    bottom: 7%;
+    right: 20%;
+}
+
+
+
+.price-order-container{
+    display:-webkit-flex;
+    align-items: baseline;
+    justify-content: center;
+    justify-items: flex-start;
+}
+.price-order-container button{
+    background-image:  linear-gradient(60deg, rgba(0, 191, 255, 0.488), deepskyblue);;
+    color: white;
+    border-radius: 5px;
+    padding: 3%;
+    padding-left: 6%;
+    padding-right: 7%;
+    font-size: 100%;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+
+.availability{
+    display: flex;
+    justify-content: space-evenly;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
+}
+.available{
+    color: rgba(0, 128, 0, 0.544);
+}
+.unavailable{
+    color:rgba(255, 0, 0, 0.426)
+}

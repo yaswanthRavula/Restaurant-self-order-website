@@ -1,0 +1,41 @@
+<!--This for categories options-->
+<div class="header">
+    <mat-chip-list  [selectable]=true [multiple]="false" class="matChipList" >
+        <mat-chip  *ngFor="let item of categoryList" (click)="showItems(item)"  id="{{item}}">{{item}}</mat-chip>
+      </mat-chip-list>
+      <div class="add-div">
+        <button (click)="addNewItem()">+</button>
+        <p>Add Item</p>
+    </div>
+</div>
+
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Staatliches&family=Ubuntu&display=swap" rel="stylesheet">
+  
+  <p class="heading">Items List</p>
+  
+  <div *ngIf="ItemsList; else displayWhenNoItems" class="grid-container">
+    <div id="cont" class="container"  *ngFor="let item of ItemsList; ">
+      <div class="price-order-container">
+          <p class="item-name">{{item.name}}</p>
+          <p class="item-price">Rs. {{item.price}}/-</p>
+        </div>  
+  
+        <div class="availability">
+          <p class="unavailable">Un-Available</p>
+          <mat-slide-toggle  defaultColor="red" class="tooggle" checked (toggleChange)="updateAvailabilityStatus(item)"></mat-slide-toggle>
+          <p class="available">Available</p>
+        </div>
+    </div>
+   
+  </div>
+  
+  <ng-template #displayWhenNoItems>
+       <p>No Items Available </p>
+  </ng-template>
+  
+  

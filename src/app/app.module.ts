@@ -7,15 +7,19 @@ import { AppComponent } from './app.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoriesComponent } from './categories/categories.component';
-import { ItemsListComponent } from './items-list/items-list.component';
 import { BillComponent } from './bill/bill.component';
+import { ManagerModule } from './manager/manager.module';
+import { UserComponent } from './user/user.component';
+import {HttpClientModule} from "@angular/common/http"
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoriesComponent,
-    ItemsListComponent,
-    BillComponent
+    BillComponent,
+    UserComponent,
+  
+   
   ],
   imports: [
     BrowserModule,
@@ -23,7 +27,9 @@ import { BillComponent } from './bill/bill.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MatChipsModule,
-    MatGridListModule
+    MatGridListModule,
+    ManagerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,39 @@
+.container{
+    display: inline-block;
+    background-color: aliceblue;
+    text-align: center;
+    width: auto;
+    align-self: center;
+    margin-top: 40px;
+    margin-left: 30%;
+    margin-right: auto;
+    padding: 100px;
+}
+.row{
+    display: flexbox;
+    flex-direction: row;
+    color: black;
+    margin: 20px;
+    justify-content: space-evenly;
+    
+}
+.row input{
+    width: 300px;
+    padding: 8px;
+}
+.row input:hover{
+    border: 1px solid deepskyblue;
+}
+button{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px ;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+}
