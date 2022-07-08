@@ -14,7 +14,7 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  categoryList=["Veg Starters","Non-Veg Starters","Veg Rice Items","Non-veg Rice Items" ,"Cool Drink"];
+  categoryList=["Veg Starters","Non-Veg Starters","Veg Rice Items","Non-Veg Rice Items" ,"Cool Drink"];
   selectedItems=[];
   chipList:any;
   chipListSelectable=true;
@@ -57,6 +57,7 @@ export class CategoriesComponent implements OnInit {
 displayList(categoryItemName){
   console.log("In Itemslist "+categoryItemName);
   switch(categoryItemName){
+
     case "Veg Starters": this.url=this.Veg_Starters_Url;
                          break;
     case "Non-Veg Starters": this.url=this.Non_Veg_Starters_Url;
@@ -68,9 +69,13 @@ displayList(categoryItemName){
     case "Cool Drinks": this.url=this.Cool_Drinks_Url;
                          break;                                                                          
   }
-  this.httpService.get(this.url).subscribe(data=>{
-    this.ItemsList=data
-  })
+  this.httpService.get(this.url).subscribe((data)=>{
+    this.ItemsList=data;
+    this.ItemsList.filter((item)=>{
+      item.quantity=1;
+    })
+  }, (err)=>{console.log("Error is "+err)})
+  
   
 }
 

@@ -5,16 +5,16 @@
     margin-left: 10%;
     margin-right: 10%;
     background-color: white;
-    margin-top: 30%;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
     justify-content: space-between;
     border-radius: 20px;
     padding-left: 5%;
     padding-right: 5%;
     align-content: center;
-    border: 0.5px solid rgba(112, 110, 110, 0.231);
+    border: 0.5px solid deepskyblue;
     color: black;
-    box-shadow: 5px 5px 20px 10px rgba(0, 191, 255, 0.445);
+    box-shadow: 5px 5px 5px 5px rgba(39, 40, 10, 0.162);
 }
 
 .order-container{
@@ -28,6 +28,8 @@
 }
 .order-container .text{
     margin: 0px;
+    line-height: 10px;
+    width: fit-content;
    
 }
 .price{
@@ -38,13 +40,28 @@
     margin-left: 25px;
 }
 .bill-container button{
-    width:33%;
+    width:70%;
     background-color: deepskyblue;
     border: none;
-    border-radius: 11px;
+    border-radius: 6px;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80%;
     font-weight: lighter;
     text-transform: capitalize;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.bill-container img{
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+
+div .buttons-container{
+    display: inline;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
 }

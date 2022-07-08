@@ -43,7 +43,7 @@ export class CategoriesComponent implements OnInit {
     this.route.navigate(['/manager/create-item']);
 }
 
-  async displayList(categoryItemName):Promise<Item[]>{
+   displayList(categoryItemName)/*Promise<Item[]>*/{
     console.log("\nfrom Items List Componenet "+categoryItemName+"\n");
     switch(categoryItemName){
 
@@ -58,9 +58,13 @@ export class CategoriesComponent implements OnInit {
       case "Cool Drinks": this.url=this.Cool_Drinks_Url;
                            break;                                                                          
     }
+    this.httpService.get(this.url).subscribe((data)=>{
+      this.ItemsList=data;
+    })
+    /*
     this.ItemsList= await this.httpService.get(this.url).toPromise();
    console.log(this.ItemsList);
-    return this.ItemsList;
+    return this.ItemsList;*/
    
    
   }

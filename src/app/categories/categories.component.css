@@ -31,7 +31,6 @@ div .grid-container{
      padding-top: 5%;
      padding-bottom: 5%;
      display: inline-block;
-    padding-left: 20%;
     box-shadow: 2px 2px 30px 2px rgba(9, 9, 9, 0.267);
     text-align: center;
     background-color: rgba(186, 187, 189, 0.166)  ;
@@ -94,8 +93,7 @@ div .grid-container{
 
 
 .price-order-container{
-    display:inline-block;
-    align-items: baseline;
+    display:inline;
     justify-content: space-evenly;
   
 }
@@ -112,3 +110,4 @@ div .grid-container{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
 }
+
